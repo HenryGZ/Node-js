@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  color:rgb(51, 51, 51);
+}
+
+body {
+  background-color: #000000;
+}
+
+.table {
+  width: 100%; 
+  margin-bottom: 1rem;
+  background-color: #0079ca;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+    background-color: #0079ca;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  th {
+    padding: 40px;
+  }
+
+  .btn-edit,
+.btn-delete {
+  background-color: #ffffffc5; /* cor de fundo */
+  color: white; /* cor do texto */
+  border: none; /* remove a borda padrão do botão */
+  padding: 8px 8px; /* espaço interno do botão */
+  text-align: center; /* alinhamento do texto */
+  text-decoration: none; /* remove a decoração de texto padrão */
+  display: inline-block; /* garante que o botão não ocupe toda a largura disponível */
+  font-size: 14px; /* tamanho da fonte */
+  margin: 4px 2px; /* margem externa */
+  cursor: pointer; /* cursor ao pairar sobre o botão */
+  border-radius: 4px; /* borda arredondada */
+}
+
