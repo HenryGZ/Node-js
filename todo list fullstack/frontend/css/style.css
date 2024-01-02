@@ -12,21 +12,21 @@ body {
   background-color: #000000;
 }
 
-.table {
-  width: 100%; 
-  margin-bottom: 1rem;
-  background-color: #0079ca;
-  border-radius: 15px;
-  padding: 30px;
-  width: 90%;
-  margin: 20px auto;
+.add-form{
   display: flex;
-  flex-direction: column;
+  gap: 10px;
   align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .form {
-    background-color: #0079ca;
+    background-color: #0099ff;
     border-radius: 15px;
     padding: 30px;
     width: 90%;
@@ -36,16 +36,27 @@ body {
     align-items: center;
   }
   
-  th {
-    padding: 40px;
-  }
+td,th{
+  padding: 10px 15px;
+  border: 1px solid #00000010;
+  text-align: center;
+}
+
+td{
+  color: #313131;
+  font-weight: 700;
+}
+
+tr:nth-child(even) {
+  background-color: #008fee;
+}
 
   .btn-edit,
 .btn-delete {
-  background-color: #ffffffc5; /* cor de fundo */
+  background-color: #ffffff; /* cor de fundo */
   color: white; /* cor do texto */
   border: none; /* remove a borda padrão do botão */
-  padding: 8px 8px; /* espaço interno do botão */
+  padding: 4px 8px; /* espaço interno do botão */
   text-align: center; /* alinhamento do texto */
   text-decoration: none; /* remove a decoração de texto padrão */
   display: inline-block; /* garante que o botão não ocupe toda a largura disponível */
@@ -55,3 +66,53 @@ body {
   border-radius: 4px; /* borda arredondada */
 }
 
+.btn-delete:nth-child(2){
+  background-color: #ff0000;
+}
+.btn-edit:nth-child(1){
+  background-color: #ffc400;
+}
+
+.btn-edit:hover,.btn-delete:hover{
+  background-color: rgb(212, 212, 212);
+}
+
+input{
+  border-radius: 4px;
+  border: none;
+  padding: 4px;
+  margin: 4px;
+}
+
+#btn-adicionar{
+  background-color: #ffffff; /* cor de fundo */
+  color: rgba(0, 0, 0, 0.800); /* cor do texto */
+  border: none; /* remove a borda padrão do botão */
+  padding: 4px 8px; /* espaço interno do botão */
+  text-align: center; /* alinhamento do texto */
+  text-decoration: none; /* remove a decoração de texto padrão */
+  display: inline-block; /* garante que o botão não ocupe toda a largura disponível */
+  font-size: 14px; /* tamanho da fonte */
+  margin: 4px 2px; /* margem externa */
+  cursor: pointer; /* cursor ao pairar sobre o botão */
+  border-radius: 4px; /* borda arredondada */
+  font-weight: 700;
+}
+
+#btn-adicionar:hover{
+  background-color: rgb(212, 212, 212);
+}
+
+select{
+  border-radius: 4px;
+  border: none;
+  padding: 4px;
+  margin: 4px;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+select:hover{
+  background-color: rgb(212, 212, 212);
+}

@@ -6,7 +6,8 @@
     <title>Todo list FullStack</title>
     
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/loadTasks.js"></script>
+    <script type="module" src="js/newTasks.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -30,26 +31,8 @@
                     </tr>
                 </thead>
                 <tbody id="tasks">
-                    <tr>
-                        <td>exemplo</td>
-                        <td>exemplo</td>
-                        <td><select>
-                            <option value="0">Status</option>
-                            <option value="1">Pendente</option>
-                            <option value="2">Andamento</option>
-                            <option value="3">Concluído</option>
-                        </select></td>
-                        <td>
-                            <button class="btn-edit"><span class="material-symbols-outlined">
-                                edit
-                                </span>
-                            </button>
-                            <button class="btn-delete"><span class="material-symbols-outlined">
-                                delete
-                                </span>
-                            </button>
-                        </td>
-                    </tr>
+                    <!-- aqui dentro estão sendo colocadas as tarefas
+                        no scipt -->
                 </tbody>
             </table>
         </div>
